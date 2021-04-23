@@ -4,7 +4,7 @@ set -e
 
 sudo apt -y update
 sudo apt -y upgrade
-sudo apt -y install make
+sudo apt -y install make letsencrypt
 
 
 install_docker() {

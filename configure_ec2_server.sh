@@ -25,8 +25,9 @@ sudo apt-get -y install docker-ce docker-ce-cli containerd.io
 
 sudo systemctl start nginx
 
-sudo mv /etc/nginx/nginx.conf{,.backup}
-sudo mv ./nginx/nginx.conf /etc/nginx/nginx.conf
+sudo cp ./nginx/nginx.conf /etc/nginx/nginx.conf
+
+sudo nginx -s reload
 
 
 
